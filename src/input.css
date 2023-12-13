@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rubik:wght@500&display=swap');
+
+@layer components {
+  *{
+    @apply font-hanken;
+  }
+  .section{
+    @apply w-full flex items-center justify-center flex-col my-24 relative;
+  }
+  .title{
+    @apply text-royal-blue-50 font-bold text-2xl min-[600px]:text-3xl tracking-tighter mb-8;
+  }
+  .btn-nav {
+    @apply text-lg font-bold px-2;
+  }
+  .gradient{
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-royal-blue-400 to-royal-blue-300;
+  }
+  .bg-gradient{
+    @apply bg-gradient-to-r from-royal-blue-700 via-royal-blue-500 to-royal-blue-300;
+  }
+  .btn{
+    @apply text-lg font-semibold px-4 py-2 rounded-lg border border-royal-blue-300 text-royal-blue-300;
+  }
+  .btn:hover{
+    @apply bg-royal-blue-950 border-royal-blue-300 text-royal-blue-400;
+  }
+  .btn:active{
+    @apply bg-royal-blue-900 border-royal-blue-300 text-royal-blue-400;
+  }
+  .ts-icon{
+    @apply w-16 min-[600px]:w-16;
+  }
+  .gradient-stabillo{
+    @apply bg-gradient-to-r from-royal-blue-500 to-transparent -rotate-6;
+  }
+
+  .card{
+    @apply w-[100%] min-[600px]:w-96 rounded-[20px] bg-royal-blue-950 p-3 overflow-hidden flex justify-start flex-col mb-8 min-[600px]:m-8;
+    border: 2px solid #9ac6f6;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px; */
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .card:hover{
+    @apply transform scale-105;
+  }
+  .card .top-section {
+    @apply h-auto rounded-[15px] flex flex-col bg-gradient-to-tr from-royal-blue-700 via-royal-blue-500 to-royal-blue-300 relative;
+  }
+  .card .top-section .border{
+    @apply border-none rounded-br-[12px] h-[40px] w-[70%] top-[-1px] bg-royal-blue-950 relative;
+    box-shadow: -10px -10px 0 0 #1b2850;
+    transform: skew(-40deg);
+  }
+  .card .top-section .border::before{
+    @apply absolute rounded-tl-[11px] h-[20px] w-[15px] top-0 right-[-15px];
+    box-shadow: -5px -5px 0 2px #1b2850;
+    content: "";
+  }
+  .card .top-section::before{
+    @apply absolute top-[39px] left-0 h-[30px] w-[15px] rounded-tl-[15px] border-royal-blue-950;
+    box-shadow: -5px -5px 0 2px #1b2850;
+    content: "";
+  }
+  .header-card{
+    @apply absolute top-0 w-full flex justify-between items-center h-12 pb-3;
+  }
+  .title-card{
+    @apply text-xl font-medium text-royal-blue-50 pl-3 min-[600px]:text-3xl;
+  }
+  .tech-stack-card{
+    @apply flex px-3 pt-2 min-[600px]:pt-3;
+  }
+  .ts-card-icon{
+    @apply w-5 min-[600px]:w-7;
+  }
+  .bottom-section{
+    @apply h-full flex flex-col justify-between items-center;
+  }
+  .card-desc{
+    @apply text-royal-blue-50 my-4 text-justify px-1 text-base;
+  }
+
+  /* ACHIEVEMENT */
+  .cert-card{
+    @apply relative w-full min-[600px]:w-80 m-2;
+  }
+  .cert-card a{
+    @apply flex justify-center items-center relative;
+  }
+  .img-cert-card{
+    @apply rounded-lg w-full ease-in-out;
+  }
+  .title-cert{
+    @apply w-full h-full absolute top-0 text-center hidden ;
+  }
+  .link-cert{
+    @apply text-slate-100 font-semibold text-2xl z-50 top-10 absolute m-5
+  }
+  .layer-blur{
+    @apply bg-slate-900 opacity-50 absolute top-0 w-full h-full;
+  }
+  /* .cert-card:hover{
+    @apply transform scale-105;
+  } */
+  .cert-card:hover > .title-cert{
+    @apply block;
+  }
+  /* .link-cert:hover{
+    @apply text-royal-blue-400 underline underline-offset-4 decoration-dashed;
+  } */
+
+  .card-contact{
+    @apply w-full
+  }
+  .btn-contact{
+    @apply w-full min-[600px]:w-64 px-4 py-2 rounded-lg border bg-royal-blue-950 border-royal-blue-300 text-royal-blue-300 flex items-center justify-start;
+  }
+  .btn-contact:hover{
+    @apply bg-royal-blue-900 border-royal-blue-300 text-royal-blue-400;
+  }
+  .icon-contact{
+    @apply w-8 mr-3;
+  }
+  .username-contact{
+    @apply text-royal-blue-200 font-bold tracking-wider text-xl;
+  }
+  .platform-contact{
+    @apply text-slate-400 font-medium;
+  }
+}
+
+#launch{
+  transform: rotate(10deg);
+}
+.fly{
+  animation: fly-1 1s ease-in-out infinite alternate;
+}
+
+@keyframes fly-1 {
+  from {transform: translateY(0.1em);}
+  to {transform: translateY(-0.1em);}
+}
