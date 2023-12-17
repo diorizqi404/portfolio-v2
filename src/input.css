@@ -24,7 +24,7 @@
     @apply bg-gradient-to-r from-royal-blue-700 via-royal-blue-500 to-royal-blue-300;
   }
   .btn{
-    @apply text-lg font-semibold px-4 py-2 rounded-lg border border-royal-blue-300 text-royal-blue-300;
+    @apply text-base font-semibold px-4 py-2 rounded-lg border border-royal-blue-300 text-royal-blue-300  mt-2;
   }
   .btn:hover{
     @apply bg-royal-blue-950 border-royal-blue-300 text-royal-blue-400;
@@ -45,14 +45,14 @@
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px; */
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-  .card:hover{
+  /* .card:hover{
     @apply transform scale-105;
-  }
+  } */
   .card .top-section {
     @apply h-auto rounded-[15px] flex flex-col bg-gradient-to-tr from-royal-blue-700 via-royal-blue-500 to-royal-blue-300 relative;
   }
   .card .top-section .border{
-    @apply border-none rounded-br-[12px] h-[40px] w-[70%] top-[-1px] bg-royal-blue-950 relative;
+    @apply border-none rounded-br-[12px] h-[40px] w-[60%] top-[-1px] bg-royal-blue-950 relative;
     box-shadow: -10px -10px 0 0 #1b2850;
     transform: skew(-40deg);
   }
@@ -118,7 +118,7 @@
     @apply w-full
   }
   .btn-contact{
-    @apply w-full min-[600px]:w-64 px-4 py-2 rounded-lg border bg-royal-blue-950 border-royal-blue-300 text-royal-blue-300 flex items-center justify-start;
+    @apply w-full min-[600px]:w-64 m-2 px-4 py-2 rounded-lg border bg-royal-blue-950 border-royal-blue-300 text-royal-blue-300 flex items-center justify-start;
   }
   .btn-contact:hover{
     @apply bg-royal-blue-900 border-royal-blue-300 text-royal-blue-400;
