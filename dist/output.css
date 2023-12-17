@@ -1001,10 +1001,6 @@ video {
   margin: 0.5rem;
 }
 
-.m-1 {
-  margin: 0.25rem;
-}
-
 .my-16 {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -1176,10 +1172,6 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-4 {
   border-width: 4px;
 }
@@ -1254,10 +1246,6 @@ video {
 
 .p-4 {
   padding: 1rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
 }
 
 .px-2 {
@@ -1351,6 +1339,10 @@ video {
   opacity: 0.75;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 #launch{
   transform: rotate(10deg);
 }
@@ -1411,10 +1403,6 @@ video {
 
   .min-\[601px\]\:hidden {
     display: none;
-  }
-
-  .min-\[601px\]\:w-48 {
-    width: 12rem;
   }
 
   .min-\[601px\]\:w-56 {
