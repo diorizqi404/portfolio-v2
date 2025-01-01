@@ -64,10 +64,14 @@ module.exports = {
           '900': '#253e83',
           '950': '#1b2850',
         }, 
+        'custom-dark': '#0d1117',
+        'custom-light': '#12181f',
+        'custom-border': '#26292f',
       },
       fontFamily: {
         'rubik': ['Rubik', 'sans-serif'],
         'jetbrains': ['JetBrains Mono', 'monospace'],
+        'ubuntu': ['Ubuntu Mono', 'monospace'],
       },
       aspectRatio: {
         '1/2' : '4 / 5',

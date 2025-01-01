@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Rubik:wght@500&display=swap');
+@import url('<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&family=Ubuntu+Mono&display=swap" rel="stylesheet">');
 
 html{
   scroll-behavior: smooth;
@@ -44,7 +44,7 @@ html{
   }
 
   .card{
-    @apply w-[100%] min-[600px]:w-96 rounded-[20px] bg-royal-blue-950 p-3 overflow-hidden flex justify-start flex-col mb-8 min-[600px]:m-8;
+    @apply w-[100%] min-[600px]:w-96 rounded-[20px] p-3 bg-royal-blue-950 overflow-hidden flex justify-start flex-col mb-8 min-[600px]:m-8;
     border: 2px solid #9ac6f6;
     /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px; */
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
